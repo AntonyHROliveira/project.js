@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com buttons</title>
+</head>
+<body>
+    <h1>O que o JavaScript pode fazer</h1>
+
+<p id="oculto" style="display: block;">Olá desenvolvedor em JavaScript</p>
+
+<p id="demo" style="display:none">JavaScript pode mostra elementos oculto (hidden) do Html</p>
+
+<!-- <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button> -->
+ <!-- OU -->
+<button type="button" onclick="(myFunction())">Click Me!</button>
+
+<script>
+    
+
+
+    let clickCount = 0;
+
+    function myFunction() {
+        clickCount++;
+
+        if (clickCount === 1) {
+            document.getElementById("demo").style.display = "block";
+        } else if (clickCount === 2) {
+            document.getElementById("oculto").style.display = "none";
+        } else if (clickCount === 3) {
+            document.getElementById("demo").innerHTML = "Olá desenvolvedor em JavaScript elementos oculto (hidden) do Html";
+        } else if (clickCount === 4) {
+            document.getElementById("demo").style.color = "red";
+        } else if (clickCount === 5) {
+            document.getElementById("demo").setAttribute("style", "color: blue; font-size: 20px;");
+            clickCount = 0; // Reset the counter after the last action
+        }
+    }
+    
+</script>
+
+</body>
+</html>
+
+
+

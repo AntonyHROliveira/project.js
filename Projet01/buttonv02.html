@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com buttons</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <h1>O que o JavaScript pode fazer</h1>
+
+<p> Olá desenvolvedor em JavaScript </p>
+
+<p id="demo" style="display: none; background-color: aqua; width: 500px; size: 8px;"> JavaScript pode mostrar elementos ocultos (hidden) do HTML </p>
+
+<!-- NOTA:
+ onclick => para um click do botão esquerdo do mouse;
+ oncblclick => para dois clicks do botão esquerdo do mouse;
+  -->
+
+
+<!-- faz aparecer o elemento oculto (hidden) do HTML -->
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Aparece o texto</button>
+
+<!-- Altera o conteúdo do elemento HTML -->
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'O JavaScript pode alterar o texto'">Alterar o texto</button>
+
+<!-- Altera as letra do texto para minúsculas -->
+<button type="button" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML.toLowerCase()">Alterar o texto para minúscula</button>
+
+<!-- Altera as letra do texto para maiúsculas -->
+<button type="button" onclick="document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML.toUpperCase()">Altera o texto para maiúscula</button>
+
+<!-- Muda a fonte das letra para italic  -->
+<button type="button" onclick="document.getElementById('demo').style.fontStyle='Italic'">Italic</button>
+
+<!-- Cria uma Sombra no texto -->
+<button type="button" onclick="document.getElementById('demo').style.textShadow='1px 0px 0px '">Sombra</button>
+
+<!-- Subriar o texto inteiro -->
+<button type="button" onclick="document.getElementById('demo').style.textDecoration='underline 2.5px solid'">Subliar</button>
+
+<!-- Altera a cor da letra -->
+<button type="button" onclick="document.getElementById('demo').style.color='red'">Altera a cor da letra</button>
+
+<!-- Altera a cor de fundo (retira a cor)  -->
+<button type="button" onclick="document.getElementById('demo').style.background=''">Altera a cor de fundo</button>
+
+<!-- Retorna a cor original de fundo -->
+<button type="button" onclick="document.getElementById('demo').style.background='aqua'">Retorna a cor de fundo</button>
+
+
+<!-- Ocultar o elemento HTML -->
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Ocultar o texto</button>
+
+
+<!-- Resetar o elemento HTML com uma função -->
+<button type="button" onclick="resetDemo()">Resetar</button>
+
+
+<!-- Faz todas as operações dos outros botões a cada click -->
+<button type="button" style="background-color: red; border-radius: 50px;" onclick="myFunction()">Alterar tudo</button>
+
+<script>
+    function resetDemo() {
+        const demo = document.getElementById('demo');
+        demo.style.display = 'none';
+        demo.innerHTML = 'JavaScript pode mostrar elementos ocultos (hidden) do HTML';
+        demo.style.color = '';
+        demo.style.fontSize = '';
+        demo.style.backgroundColor = 'aqua';
+        demo.style.fontStyle = '';
+        demo.style.textShadow = '';
+        demo.style.textDecoration = '';
+    }
+
+    let clickCount = 0;
+
+    function myFunction() {
+    clickCount++;
+
+    if (clickCount == 1) {
+        document.getElementById("demo").style.display = "block";
+    } else if (clickCount == 2) {
+        document.getElementById("demo").innerHTML = "O JavaScript pode alterar o texto";
+    } else if (clickCount == 3) {
+        document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML.toLowerCase();
+    } else if (clickCount == 4) {
+        document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML.toUpperCase();
+    } else if (clickCount == 5) {
+        document.getElementById("demo").style.color = "red";
+    } else if (clickCount == 6) {
+        document.getElementById("demo").style.background = "";
+    } else if (clickCount == 7) {
+        document.getElementById("demo").style.background = "aqua";
+    } else if (clickCount == 8) {
+        document.getElementById("demo").style.fontStyle = "italic";
+    } else if (clickCount == 9) {
+        document.getElementById("demo").style.textShadow = "1px 0px 0px black"; 
+    } else if (clickCount == 10) {
+        document.getElementById("demo").style.textDecoration = "underline 2.5px solid";
+    } else if (clickCount == 11) {
+        document.getElementById("demo").style.display = "none";
+    } else if (clickCount == 12) {
+        resetDemo(); // Reset the demo element
+        clickCount = 0; // Reset the counter after the last action
+    }
+}
+
+// document.getElementById("demo").setAttribute("style", "color: blue; font-size: 20px;");
+// clickCount = 0; // Reset the counter after the last action
+
+
+</script>
+
+</body>
+</html>
+

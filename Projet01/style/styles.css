@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    
+   
+}
+h1 {
+    color: #333;
+}
+h1:hover {
+    cursor: pointer;/*<= muda o cursor para a mãozinha ao passar o mouse */
+    color: #007BFF;
+    text-decoration: underline;/*<= sublinha o texto ao passar o mouse */
+    font-size: 2em;/*<= aumenta o tamanho da fonte ao passar o mouse */
+    font-weight: bold;/*<= deixa o texto em negrito ao passar o mouse */
+    text-align: center;/*<= centraliza o texto */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 5px rgba(168, 4, 4, 0.979);/* sombra da caixa do texto */
+    text-transform: uppercase;/*<= transforma o texto em maiúsculo */
+    letter-spacing: 1px;/*<= espaçamento entre as letra*/
+    text-shadow: 1px 1px 2px rgba(240, 18, 229, 0.925);/* sombra do texto */
+    transition: all 0.3s ease-in-out;/*<= transição suave para o efeito de hover */
+    animation: fadeIn 1s ease-in-out;/* animação de fade-in */
+    font-family: 'Courier New', Courier, monospace;/*<= fonte do texto */
+    text-decoration: none;/*<= tira o sublinhado do texto */
+   
+
+}
+button {
+    
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: auto;
+    text-align: center;
+    
+   
+}
+button:hover {
+    background-color: #0056b3;
+    text-decoration:underline;
+    font-style: italic;
+}
