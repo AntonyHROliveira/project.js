@@ -1,0 +1,27 @@
+  <p style="display: flex; justify-content: center; text-align: center;">Bem-vindo ao meu portfólio!<br> Aqui você encontrará projetos incríveis que mostram minhas habilidades e criatividade.</p><hr>
+    <t style="display: flex; justify-content: center; text-align: center; "> 
+        <hr>
+        <em><hr>Bem-vindo ao meu portfólio!<br> Aqui você encontrará projetos incríveis que mostram minhas habilidades e criatividade.<hr></em><hr>
+        <b><hr>Bem-vindo ao meu portfólio!<br> Aqui você encontrará projetos incríveis que mostram minhas habilidades e criatividade.<hr></b><hr>
+        <b><hr>Bem-vindo ao meu portfólio!<br> Aqui você encontrará projetos incríveis que mostram minhas habilidades e criatividade.<hr></b><hr>
+    </t>
+    <br><br>
+    <t style="display: flex; justify-content: center; text-align: center; ">
+        <em><hr>Bem-vindo ao meu portfólio!<br> Aqui você encontrará projetos incríveis que mostram minhas habilidades e criatividade.<hr></em>
+   
+    </t>
+
+############################################################################################################################################################
+
+<h1>Introdução a JavaScript</h1><hr>
+   
+        
+       
+ <P><h3><ins>Funcionalidades gerais do JavaScript:</ins></h3>
+    <h4>Manipular o conteúdo da página web tipo (estilo e o comportamento);</h4>
+    <h4>Manipular o navegador;</h4>
+    <h4>Interagir com formulários;</h4>
+    <h4>Interagir com outras Linguagem de programação;</h4>
+</P>
+
+############################################################################################################################################################
